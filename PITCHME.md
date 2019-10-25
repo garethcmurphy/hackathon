@@ -1,10 +1,15 @@
 ---?color=#7E317B
 
-# PaNOSC WP3 Hackathon
+## PaNOSC WP3 Hackathon
+
+Gareth Murphy
+@garethcmurphy
 
 ---
 
-## Install
+## Install Prerequisites
+
+https://www.brew.sh
 
 ```bash
 brew install git
