@@ -51,7 +51,7 @@ npm start
     it('retrieves datasets with H20,  pressure > 100', async () => {
       find.resolves(aListOfDatasets);
       const details = await controller.find({
-        whÎere: {and: [{'pressure.value': {gt: 100}}, {sample: 'water'}]},
+        where: {and: [{'pressure.value': {gt: 100}}, {sample: 'water'}]},
       });
       console.log(details);
       expect(details).to.eql(aListOfDatasets);
