@@ -12,6 +12,7 @@ brew install node
 ```
 
 ---
+Install common-api
 
 ```
 
@@ -23,3 +24,16 @@ npm start
 
 
 ```
+
+---
+
+View Explorer
+
+* Go to
+http://localhost:3000/explorer
+* Click DatasetController -> Get -> Try it Out
+* Change limit to 10
+* Click Execute
+
+
+---
