@@ -1,2 +1,10 @@
 logo : assets/img/SciCatLogo.svg
 logo-position : top-right
+
+slide-number: true
+
+highlight : solarized-light
+
+
+theme : white
+theme-override : assets/css/PITCHME.css
