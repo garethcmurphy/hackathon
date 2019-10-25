@@ -1,6 +1,6 @@
 ---?color=#7E317B
 
-# Hackathon
+# PaNOSC WP3 Hackathon
 
 ---
 
