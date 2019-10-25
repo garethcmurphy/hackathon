@@ -51,7 +51,11 @@ npm start
     it('retrieves datasets with H20,  pressure > 100', async () => {
       find.resolves(aListOfDatasets);
       const details = await controller.find({
-        where: {and: [{'pressure.value': {gt: 100}}, {sample: 'water'}]},
+        where: {and: [
+            {'pressure.value': {gt: 100}}, 
+            {sample: 'water'}
+            ]
+            },
       });
       console.log(details);
       expect(details).to.eql(aListOfDatasets);
@@ -59,8 +63,8 @@ npm start
     });
 ```
 
-@[1]
-@[2,3]
-@[5-10]
+@[1-3]
+@[4,8]
+@[9-11]
 
 ---
