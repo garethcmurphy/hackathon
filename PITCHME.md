@@ -36,21 +36,22 @@ npm start
 
 ## Create dataset
 
-* POST
+- POST
+
 ---
 
 ## Create unit test
 
-
 ```python
-    it('retrieves datasets with water and  pressure above 100', async () => {
+    it('retrieves datasets with H20,  pressure > 100', async () => {
       find.resolves(aListOfDatasets);
       const details = await controller.find({
-        where: {and: [{'pressure.value': {gt: 100}}, {sample: 'water'}]},
+        whÎere: {and: [{'pressure.value': {gt: 100}}, {sample: 'water'}]},
       });
       console.log(details);
       expect(details).to.eql(aListOfDatasets);
       sinon.assert.called(find);
     });
 ```
+
 ---
