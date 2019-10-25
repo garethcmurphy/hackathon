@@ -12,28 +12,45 @@ brew install node
 ```
 
 ---
-Install common-api
 
-```
+## Install common-api
 
-
+```bash
 git clone https://github.com/panosc-eu/common-api.git
 cd common-api
 npm install
 npm start
-
-
 ```
 
 ---
 
-View Explorer
+## View Explorer
 
-* Go to
-http://localhost:3000/explorer
-* Click DatasetController -> Get -> Try it Out
-* Change limit to 10
-* Click Execute
+- Go to
+  http://localhost:3000/explorer
+- Click DatasetController -> Get -> Try it Out
+- Change limit to 10
+- Click Execute
+
+---
+
+## Create dataset
+
+* POST
+---
+
+## Create unit test
 
 
+```python
+    it('retrieves datasets with water and  pressure above 100', async () => {
+      find.resolves(aListOfDatasets);
+      const details = await controller.find({
+        where: {and: [{'pressure.value': {gt: 100}}, {sample: 'water'}]},
+      });
+      console.log(details);
+      expect(details).to.eql(aListOfDatasets);
+      sinon.assert.called(find);
+    });
+```
 ---
